@@ -8,11 +8,34 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">32,223</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">39,040</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">stepdefinitions.Runner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1666798488541</td><td rowspan="1">31184</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">stepdefinitions.Runner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1676312111628</td><td rowspan="1">37539</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">stepdefinitions.Runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Check log in with valid cred&quot;</td><td>&quot;Login functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">stepdefinitions.Runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Check log in with valid cred&quot;</td><td>&quot;Login functionality&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //section[@id=&apos;block-block-3&apos;]/div/div/div[3]/div[3]/a
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;WINDELL-B6HDFLT&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [5d512dd1-a7cd-426a-86d1-bf22cf82c3cd, findElement {using=xpath, value=//section[@id=&apos;block-block-3&apos;]/div/div/div[3]/div[3]/a}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0.1, moz:accessibilityChecks: false, moz:buildID: 20230127170202, moz:debuggerAddress: 127.0.0.1:55843, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 66776, moz:profile: C:\Users\radkr\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:55843/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5d512dd1-a7cd-426a-86d1-bf22cf82c3cd
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at com.facebook.base.Base.click(Base.java:170)
+	at com.facebook.signuppages.SignupPage.clickSignin(SignupPage.java:38)
+	at stepdefinitions.steps.user_clicks_on_sigin(steps.java:51)
+	at ✽.User clicks on sigin(file:///C:/Users/radkr/eclipse-workspace/BDD/./src/test/resources/features/complete.feature:7)
+... Removed 4 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

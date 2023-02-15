@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-26T11:34:47 EDT" name="Default suite" finished-at="2022-10-26T11:35:19 EDT" duration-ms="32223">
+  <suite name="Suite" duration-ms="39040" started-at="2023-02-13T13:15:10 EST" finished-at="2023-02-13T13:15:49 EST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepdefinitions.Runner@5ab956d7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepdefinitions.Runner@37e547da]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-10-26T11:34:47 EDT" name="Default test" finished-at="2022-10-26T11:35:19 EDT" duration-ms="32223">
+    <test name="Test" duration-ms="39040" started-at="2023-02-13T13:15:10 EST" finished-at="2023-02-13T13:15:49 EST">
       <class name="stepdefinitions.Runner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:stepdefinitions.Runner@5ab956d7]" started-at="2022-10-26T11:34:47 EDT" name="setUpClass" finished-at="2022-10-26T11:34:48 EDT" duration-ms="880" status="PASS">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:stepdefinitions.Runner@37e547da]" name="setUpClass" is-config="true" duration-ms="915" started-at="2023-02-13T13:15:10 EST" finished-at="2023-02-13T13:15:11 EST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4c04216f]]>
+                <![CDATA[org.testng.TestRunner@41a374be]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepdefinitions.Runner@5ab956d7]" started-at="2022-10-26T11:34:48 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-26T11:35:19 EDT" duration-ms="31184" status="PASS">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepdefinitions.Runner@37e547da]" name="runScenario" duration-ms="37539" started-at="2023-02-13T13:15:11 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T13:15:49 EST">
           <params>
             <param index="0">
               <value>
@@ -34,14 +34,66 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //section[@id='block-block-3']/div/div/div[3]/div[3]/a
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'WINDELL-B6HDFLT', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [5d512dd1-a7cd-426a-86d1-bf22cf82c3cd, findElement {using=xpath, value=//section[@id='block-block-3']/div/div/div[3]/div[3]/a}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0.1, moz:accessibilityChecks: false, moz:buildID: 20230127170202, moz:debuggerAddress: 127.0.0.1:55843, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 66776, moz:profile: C:\Users\radkr\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:55843/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5d512dd1-a7cd-426a-86d1-bf22cf82c3cd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //section[@id='block-block-3']/div/div/div[3]/div[3]/a
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'WINDELL-B6HDFLT', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [5d512dd1-a7cd-426a-86d1-bf22cf82c3cd, findElement {using=xpath, value=//section[@id='block-block-3']/div/div/div[3]/div[3]/a}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0.1, moz:accessibilityChecks: false, moz:buildID: 20230127170202, moz:debuggerAddress: 127.0.0.1:55843, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 66776, moz:profile: C:\Users\radkr\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:55843/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5d512dd1-a7cd-426a-86d1-bf22cf82c3cd
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at com.facebook.base.Base.click(Base.java:170)
+at com.facebook.signuppages.SignupPage.clickSignin(SignupPage.java:38)
+at stepdefinitions.steps.user_clicks_on_sigin(steps.java:51)
+at ✽.User clicks on sigin(file:///C:/Users/radkr/eclipse-workspace/BDD/./src/test/resources/features/complete.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:stepdefinitions.Runner@5ab956d7]" started-at="2022-10-26T11:35:19 EDT" name="tearDownClass" finished-at="2022-10-26T11:35:19 EDT" duration-ms="108" status="PASS">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:stepdefinitions.Runner@37e547da]" name="tearDownClass" is-config="true" duration-ms="83" started-at="2023-02-13T13:15:49 EST" finished-at="2023-02-13T13:15:49 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- stepdefinitions.Runner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.facebook.base.Base">
+        <test-method status="PASS" signature="exec()[pri:0, instance:com.facebook.base.Base@4f638935]" name="exec" is-config="true" duration-ms="6621" started-at="2023-02-13T13:15:04 EST" finished-at="2023-02-13T13:15:10 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exec -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.facebook.base.Base@4f638935]" name="teardown" is-config="true" duration-ms="1928" started-at="2023-02-13T13:15:49 EST" finished-at="2023-02-13T13:15:51 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.facebook.base.Base -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

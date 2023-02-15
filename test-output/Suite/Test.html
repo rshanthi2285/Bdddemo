@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 19 11:03:41 EDT 2022</td>
+<td>Started on:</td><td>Mon Feb 13 13:15:10 EST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>22 seconds (22696 ms)</td>
+<tr><td>Total time:</td><td>39 seconds (39040 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,9 +76,60 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='stepdefinitions.Runner.runScenario()'><b>runScenario</b><br>Test class: stepdefinitions.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check log in with valid cred", "Login functionality"</td>
-<td></td>
-<td>21</td>
-<td>stepdefinitions.Runner@4b34fff9</td></tr>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //section[@id=&apos;block-block-3&apos;]/div/div/div[3]/div[3]/a
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;WINDELL-B6HDFLT&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [5d512dd1-a7cd-426a-86d1-bf22cf82c3cd, findElement {using=xpath, value=//section[@id=&apos;block-block-3&apos;]/div/div/div[3]/div[3]/a}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0.1, moz:accessibilityChecks: false, moz:buildID: 20230127170202, moz:debuggerAddress: 127.0.0.1:55843, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 66776, moz:profile: C:\Users\radkr\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:55843/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5d512dd1-a7cd-426a-86d1-bf22cf82c3cd
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at com.facebook.base.Base.click(Base.java:170)
+	at com.facebook.signuppages.SignupPage.clickSignin(SignupPage.java:38)
+	at stepdefinitions.steps.user_clicks_on_sigin(steps.java:51)
+	at ✽.User clicks on sigin(file:///C:/Users/radkr/eclipse-workspace/BDD/./src/test/resources/features/complete.feature:7)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace341120332", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace341120332'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //section[@id=&apos;block-block-3&apos;]/div/div/div[3]/div[3]/a
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;WINDELL-B6HDFLT&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [5d512dd1-a7cd-426a-86d1-bf22cf82c3cd, findElement {using=xpath, value=//section[@id=&apos;block-block-3&apos;]/div/div/div[3]/div[3]/a}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0.1, moz:accessibilityChecks: false, moz:buildID: 20230127170202, moz:debuggerAddress: 127.0.0.1:55843, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 66776, moz:profile: C:\Users\radkr\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:55843/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5d512dd1-a7cd-426a-86d1-bf22cf82c3cd
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at com.facebook.base.Base.click(Base.java:170)
+	at com.facebook.signuppages.SignupPage.clickSignin(SignupPage.java:38)
+	at stepdefinitions.steps.user_clicks_on_sigin(steps.java:51)
+	at ✽.User clicks on sigin(file:///C:/Users/radkr/eclipse-workspace/BDD/./src/test/resources/features/complete.feature:7)
+</pre></div></td>
+<td>37</td>
+<td>stepdefinitions.Runner@37e547da</td></tr>
 </table><p>
 </body>
 </html>
